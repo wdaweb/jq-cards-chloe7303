@@ -1,0 +1,144 @@
+body{
+    background: url('./bg.jpg') no-repeat ;
+    background-size: cover; 
+}
+.container{
+    width: 800px;
+    margin: 100px auto 0;
+}
+
+/* table */
+#game{
+    width: 660px;
+    margin: 0 auto;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    float: left;
+    margin: 5px;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/back.png');  
+    background-size: contain; 
+    position: absolute;
+    transform: rotateY(180deg);
+}
+.front{
+    width: 100%;
+    height: 100%;
+    /* background-image: url('./img/1F.png');   */
+    background-size: contain; 
+    position: absolute;
+}
+.close{
+    transform: rotateY(180deg);
+}
+
+/* text */
+.textArea{
+    margin-top: 450px;
+    text-align: center;
+    color: #fff;
+}
+.textArea h2, h3{
+    letter-spacing: .1em;
+}
+.textArea span{
+   color: #eff30b;
+}
+
+
+/* title */
+.titstyle {
+font-size: 70px;
+font-family: "Times New Roman", Times, serif;
+display: table;
+position: relative;
+margin: 1em auto;
+color:aliceblue;
+}
+.titstyle:before,
+.titstyle:after {
+border-width: 1px 0;
+border-style: solid;
+content: "";
+height: 1.2em;
+display: block;
+width: 45%;
+position: absolute;
+}
+.titstyle:after {
+right: 0px;
+top: 0px;
+}
+.titstyle:before {
+left: 0px;
+}
+.titstyle .title {
+font-size: 0.8em;
+margin: auto;
+height: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.titstyle .title:before,
+.titstyle .title:after {
+content: "*";
+font-size: 0.6em;
+position: absolute;
+text-align: center;
+width: 100%;
+display: block;
+margin: 0;
+padding: 0;
+}
+.titstyle .title:before {
+top: -0.5em;
+}
+.titstyle .title:after {
+bottom: -0.9em;
+} 
+
+/* button */
+  .btnwrap { 
+    text-align: center;
+    z-index: 0;
+    position: relative;
+  }
+  .btn {
+    font-family:"Times New Roman", Times, serif;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+    position: relative;
+    border: 3px solid #fff;
+  }
+  .btn:before {
+    border: 3px solid #e299a0;
+    background: #e299a0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .button-1 {
+    border-radius: 100em;
+  }
+  .button-1:before {
+    border-radius: 100em;
+    left: 2px;
+    top: 1px;
+  }
+
+  
